@@ -1,4 +1,3 @@
-
 using System;
 
 namespace Tennis;
@@ -15,7 +14,7 @@ public static class ScoreCalculator
     {
         var playerOnePoints = playerOne.Points;
         var playerTwoPoints = playerTwo.Points;
-        
+
         if (playerOnePoints == playerTwoPoints)
         {
             return GetDrawScore(playerOnePoints);
@@ -35,7 +34,7 @@ public static class ScoreCalculator
     {
         var isPlayerInWinningPosition = playerOnePoints > FortyPoints || playerTwoPoints > FortyPoints;
         var scoreDifference = Math.Abs(playerOnePoints - playerTwoPoints);
-        
+
         return isPlayerInWinningPosition && scoreDifference >= PointDifferenceToWin;
     }
 
@@ -52,7 +51,6 @@ public static class ScoreCalculator
 
     private static string GetWinningScore(Player playerOne, Player playerTwo)
     {
-        
         return playerOne.Points > playerTwo.Points
             ? $"Win for {playerOne.Name}"
             : $"Win for {playerTwo.Name}";

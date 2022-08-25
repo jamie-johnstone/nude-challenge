@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace Tennis;
 
 public interface ITennisGameTracker

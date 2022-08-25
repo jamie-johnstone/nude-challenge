@@ -16,7 +16,7 @@ public class TennisGameTracker : ITennisGameTracker
         var pointWinner = _playerOne.IsCalled(winner)
             ? _playerOne
             : _playerTwo;
-            
+
         pointWinner.IncrementPoints();
     }
 
