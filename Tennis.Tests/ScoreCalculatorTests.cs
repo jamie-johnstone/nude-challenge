@@ -57,14 +57,14 @@ public class ScoreCalculatorTests
     [Fact]
     public void TestIsGameWonIdentifiesWinningScore()
     {
-        var result = ScoreCalculator.IsGameWon(4, 1);
+        var result = ScoreCalculator.HasGameBeenWon(4, 1);
         Assert.True(result);
     }
 
     [Fact]
     public void TestIsGameWonIdentifiesGameNotWon()
     {
-        var result = ScoreCalculator.IsGameWon(2, 1);
+        var result = ScoreCalculator.HasGameBeenWon(2, 1);
         Assert.False(result);
     }
 

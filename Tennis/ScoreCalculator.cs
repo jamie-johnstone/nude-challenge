@@ -25,12 +25,12 @@ public static class ScoreCalculator
             return GetNormalScore(playerOnePoints, playerTwoPoints);
         }
 
-        return IsGameWon(playerOnePoints, playerTwoPoints)
+        return HasGameBeenWon(playerOnePoints, playerTwoPoints)
             ? GetWinningScore(playerOne, playerTwo)
             : GetAdvantageScore(playerOne, playerTwo);
     }
 
-    public static bool IsGameWon(int playerOnePoints, int playerTwoPoints)
+    public static bool HasGameBeenWon(int playerOnePoints, int playerTwoPoints)
     {
         var isPlayerInWinningPosition = playerOnePoints > FortyPoints || playerTwoPoints > FortyPoints;
         var scoreDifference = Math.Abs(playerOnePoints - playerTwoPoints);

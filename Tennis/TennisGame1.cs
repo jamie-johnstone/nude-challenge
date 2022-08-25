@@ -25,7 +25,7 @@ public class TennisGame1 : ITennisGame
     {
         AwardPointToPlayer(playerName);
         UpdateScoreAfterPoint();
-        CheckForWin(playerName);
+        RecordPlayerWin(playerName);
     }
 
     private void AwardPointToPlayer(string playerName)
@@ -46,19 +46,24 @@ public class TennisGame1 : ITennisGame
         _latestScore = ScoreCalculator.GetScore(_playerOne, _playerTwo);
     }
 
-    // Busy method..
-    private void CheckForWin(string pointWinner)
+    private void RecordPlayerWin(string pointWinner)
     {
-        if (!ScoreCalculator.IsGameWon(_playerOne.Points, _playerTwo.Points))
+        var gameHasBeenWon = ScoreCalculator.HasGameBeenWon(_playerOne.Points, _playerTwo.Points);
+        if (!gameHasBeenWon)
         {
             return;
         }
-
-        _gameTracker?.RecordWin(pointWinner);
-        ResetGameAfterWin();
+        
+        AddGameWinToTracker(pointWinner);
+        ResetPlayerPointsAfterGame();
     }
 
-    private void ResetGameAfterWin()
+    private void AddGameWinToTracker(string winningPlayer)
+    {
+        _gameTracker?.RecordWin(winningPlayer);
+    }
+
+    private void ResetPlayerPointsAfterGame()
     {
         _playerOne.ResetPoints();
         _playerTwo.ResetPoints();
