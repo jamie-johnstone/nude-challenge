@@ -17,4 +17,4 @@
         ...
 ```
 * Instead of tracking integer points, could use some kind of enum/object for the scores and move between them
-* Reused `Person` for TennisGameTracker, used interface so this could be changed later without affecting TennisGame1
+* Reused `Person` for TennisGameTracker, used interface so this could be changed later without affecting `TennisGame1`
