@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/jamiejohnstone/Code/Nude/Tennis-Refactoring-Kata/Tennis.Tests/Tennis.Tests.csproj": {}
+  },
+  "projects": {
+    "/Users/jamiejohnstone/Code/Nude/Tennis-Refactoring-Kata/Tennis.Tests/Tennis.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jamiejohnstone/Code/Nude/Tennis-Refactoring-Kata/Tennis.Tests/Tennis.Tests.csproj",
+        "projectName": "Tennis.Tests",
+        "projectPath": "/Users/jamiejohnstone/Code/Nude/Tennis-Refactoring-Kata/Tennis.Tests/Tennis.Tests.csproj",
+        "packagesPath": "/Users/jamiejohnstone/.nuget/packages/",
+        "outputPath": "/Users/jamiejohnstone/Code/Nude/Tennis-Refactoring-Kata/Tennis.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jamiejohnstone/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://tfs.zonal.co.uk/tfs/DefaultCollection/_packaging/Zonal.Shared/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/jamiejohnstone/Code/Nude/Tennis-Refactoring-Kata/Tennis/Tennis.csproj": {
+                "projectPath": "/Users/jamiejohnstone/Code/Nude/Tennis-Refactoring-Kata/Tennis/Tennis.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.2.0-preview-20220131-20, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2-pre.12, )"
+            },
+            "xunit.runner.console": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.3.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/jamiejohnstone/Code/Nude/Tennis-Refactoring-Kata/Tennis/Tennis.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/jamiejohnstone/Code/Nude/Tennis-Refactoring-Kata/Tennis/Tennis.csproj",
+        "projectName": "Tennis",
+        "projectPath": "/Users/jamiejohnstone/Code/Nude/Tennis-Refactoring-Kata/Tennis/Tennis.csproj",
+        "packagesPath": "/Users/jamiejohnstone/.nuget/packages/",
+        "outputPath": "/Users/jamiejohnstone/Code/Nude/Tennis-Refactoring-Kata/Tennis/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/jamiejohnstone/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://tfs.zonal.co.uk/tfs/DefaultCollection/_packaging/Zonal.Shared/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
